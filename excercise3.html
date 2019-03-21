@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Excercise 3</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	body{
+		padding-top: 20px;
+		background-color: #8FBC8F;
+	}
+
+	#nama{
+		width: 200px;
+		height: auto;
+		margin-left: 20px;
+		margin-right: 105px;
+	}
+
+	#rotation_period{
+		width: 120px;
+		height: auto;
+		margin-right: 190px; 
+
+	}
+
+	#orbital_period{
+		width: 120px;
+		height: auto;
+		margin-right: 130px;
+	}
+
+	#diameter{
+		width: 120px;
+		height: auto;
+		margin-right: 130px;
+	}
+
+	#surface_water{
+		width: 120px;
+		height: auto;
+		margin-right: 0px;
+	}
+
+	table{
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	th, td{
+		text-align: center;
+		padding: 8px;
+	}
+
+	th{
+	background-color: black;
+		color: white;
+	}
+
+	tr:nth-child(even){
+		background-color: #f2f2f2;
+	}
+
+	#Alderaan:hover{
+		background-color: #FFE4B5;
+
+	}
+	#Yavin:hover{
+		background-color: #FFE4B5;
+
+	}
+
+	#Hoth:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Dagobah:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Bespin:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Endor:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Naboo:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Coruscant:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Kamino:hover{
+		background-color: #FFE4B5;
+	}
+
+	#Geonosis:hover{
+		background-color: #FFE4B5;
+	}
+
+	#nm{
+		text-align: left;
+	}
+
+	.btn:hover{
+		background-color: black;
+		color: white;
+	}
+
+	}
+</style>
+<script type="text/javascript" src="excercise3.js"></script>
+<body>
+	<input type="text" id="nama" autofocus>
+	<input type="text" id="rotation_period">
+	<input type="text" id="orbital_period">
+	<input type="text" id="diameter">
+	<input type="text" id="surface_water"> <button class="btn" onclick="btn()">CARI</button><br><br>
+	
+
+	<table>
+		<thead>
+			<tr>
+				<th>Nama</th>
+				<th>Rotation Period</th>
+				<th>Orbital Period</th>	
+				<th>Diameter</th>
+				<th>Surface Water</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr id="Alderaan">
+				<td id="nm">Alderaan</td>
+				<td>24</td>
+				<td>364</td>
+				<td>12500</td>
+				<td>40</td>
+			</tr>
+
+			<tr id="Yavin">
+				<td id="nm">Yavin IV</td>
+				<td>24</td>
+				<td>4818</td>
+				<td>10200</td>
+				<td>8</td>
+			</tr>
+
+			<tr id="Hoth">
+				<td id="nm">Hoth</td>
+				<td>23</td>
+				<td>549</td>
+				<td>7200</td>
+				<td>100</td>
+			</tr>
+
+			<tr id="Dagobah">
+				<td id="nm">Dagobah</td>
+				<td>23</td>
+				<td>341</td>
+				<td>8900</td>
+				<td>8</td>
+			</tr>
+
+			<tr id="Bespin">
+				<td id="nm">Bespin</td>
+				<td>12</td>
+				<td>5110</td>
+				<td>118000</td>
+				<td>0</td>
+			</tr>
+
+			<tr id="Endor">
+				<td id="nm">Endor</td>
+				<td>18</td>
+				<td>402</td>
+				<td>4900</td>
+				<td>8</td>
+			</tr>
+
+			<tr id="Naboo">
+				<td id="nm">Naboo</td>
+				<td>26</td>
+				<td>312</td>
+				<td>12120</td>
+				<td>12</td>
+			</tr>
+
+			<tr id="Coruscant">
+				<td id="nm">Coruscant</td>
+				<td>24</td>
+				<td>368</td>
+				<td>12240</td>
+				<td>unknow</td>
+			</tr>
+
+			<tr id="Kamino">
+				<td id="nm">Kamino</td>
+				<td>27</td>
+				<td>463</td>
+				<td>19720</td>
+				<td>100</td>
+			</tr>
+
+			<tr id="Geonosis">
+				<td id="nm">Geonosis</td>
+				<td>30</td>
+				<td>256</td>
+				<td>11370</td>
+				<td>5</td>
+			</tr>
+
+		</tbody>
+
+	</table>
+
+	<div id="tampil"></div>
+</body>
+</html>
